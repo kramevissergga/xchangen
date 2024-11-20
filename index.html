@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Home</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css?_v=20241120023103" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+	<link rel="stylesheet" href="css/style.min.css?_v=20241120023103">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<div class="header__top">
+					<div class="header__social">
+						<div class="header__social-item social-item _icon-tg"><a href="#" class="text-link">название tg канала</a></div>
+						<div class="header__social-item social-item _icon-mail"><a href="mailto:xchangen@change.com" class="text-link">xchangen@change.com</a>
+						</div>
+						<div data-da=".header__body, 1259.98, 2" class="header__social-item social-item">график <span>24/7</span></div>
+					</div>
+				</div>
+				<div class="header__body">
+					<div class="header__logo">
+						<img src="img/logo.svg" alt="Image" class="ibg ibg--contain">
+					</div>
+					<div class="header__menu menu">
+						<nav class="menu__body">
+							<div class="menu__header">
+								<div class="header__lang-mobile lang-mobile">
+									<a href="#" class="lang-mobile__link text-link _active">УКР</a>
+									<a href="#" class="lang-mobile__link text-link">АНГЛ</a>
+								</div>
+							</div>
+							<ul class="menu__list">
+								<li class="menu__item"><a href="#" class="menu__link text-link">Главная</a></li>
+								<li class="menu__item"><a href="#" class="menu__link text-link">Сервисы</a></li>
+								<li class="menu__item"><a href="#" class="menu__link text-link">Обменники в городах</a></li>
+								<li class="menu__item"><a href="#" class="menu__link text-link">Отзывы</a></li>
+								<li class="menu__item"><a href="#" class="menu__link text-link">Процесс выдачи наличных</a></li>
+								<li class="menu__item menu__item--pc"><a href="#" class="menu__link text-link">Связаться с нами</a></li>
+							</ul>
+							<a href="#" class="menu__button button">Связаться с нами</a>
+						</nav>
+					</div>
+					<div class="header__lang lang">
+						<div class="lang__value _icon-ch-down">UA</div>
+						<div class="lang__options">
+							<a href="#" class="lang__option">EN</a>
+							<a href="#" class="lang__option">EN</a>
+							<a href="#" class="lang__option">EN</a>
+							<a href="#" class="lang__option">EN</a>
+						</div>
+					</div>
+					<button type="button" class="menu__icon icon-menu"><span></span></button>
+				</div>
+			</div>
+		</header>
+		<main class="page">
+			<div class="page__hero hero">
+				<div class="hero__container">
+					<div class="hero__wrapper">
+						<img src="img/hero.webp" alt="Image" class="hero__image">
+						<div class="hero__item">
+							Операции с UAH / USD / EUR / USDT
+						</div>
+						<div class="hero__item">
+							Работаем с платежными системами Wise, Payoneer, Binance та Revolut
+						</div>
+						<div class="hero__item">
+							Доставка по Киеву по Вашему адресу
+						</div>
+						<div class="hero__item">
+							Обрабатываем наличные и безналичные платежи
+						</div>
+						<div class="hero__item">
+							Кассы выдачи по всему миру
+						</div>
+					</div>
+				</div>
+			</div>
+			<section class="page__requests requests">
+				<div class="requests__container">
+					<div class="requests__wrapper">
+						<h2 class="requests__title title-section">
+							Популярные запросы:
+						</h2>
+						<div class="requests__items">
+							<div class="requests__item">
+								<div class="requests__image">
+									<img src="img/requests/01.svg" alt="Image" class="ibg ibg--contain">
+								</div>
+								<div class="requests__label">
+									в наличные
+								</div>
+							</div>
+							<div class="requests__item">
+								<div class="requests__image">
+									<img src="img/requests/01.svg" alt="Image" class="ibg ibg--contain">
+								</div>
+								<div class="requests__label">
+									в Usdt
+								</div>
+							</div>
+							<div class="requests__item">
+								<div class="requests__image">
+									<img src="img/requests/02.svg" alt="Image" class="ibg ibg--contain">
+								</div>
+								<div class="requests__label">
+									в наличные
+								</div>
+							</div>
+							<div class="requests__item">
+								<div class="requests__image">
+									<img src="img/requests/03.svg" alt="Image" class="ibg ibg--contain">
+								</div>
+								<div class="requests__label">
+									Пересылки по всему миру
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="page__services services">
+				<div class="services__container">
+					<div class="services__wrapper">
+						<h2 class="services__title title-section">
+							Валютные сервисы*
+						</h2>
+						<div class="services__tables">
+							<table class="services__table">
+								<thead>
+									<tr>
+										<th>сервис</th>
+										<th>Выведение</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>PAYONEER</td>
+										<td>от 1%</td>
+									</tr>
+									<tr>
+										<td>WISE</td>
+										<td>от 1%</td>
+									</tr>
+									<tr>
+										<td>REVOLUT</td>
+										<td>от 1%</td>
+									</tr>
+									<tr>
+										<td>MERCURY</td>
+										<td>от 1%</td>
+									</tr>
+								</tbody>
+							</table>
+							<table class="services__table">
+								<tbody>
+									<tr>
+										<td>USDT</td>
+										<td>от 1%</td>
+									</tr>
+									<tr>
+										<td>ZELLE</td>
+										<td>от 2%</td>
+									</tr>
+									<tr>
+										<td>ACH</td>
+										<td>от 2%</td>
+									</tr>
+									<tr>
+										<td>WIRE</td>
+										<td>от 2%</td>
+									</tr>
+									<tr>
+										<td>ПЕРЕСТАНОВКА</td>
+										<td>от 0,5%</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="services__labels">
+							<div class="services__label">
+								*Любые другие операции под запрос.
+							</div>
+							<div class="services__label">
+								**Адресная доставка наличной валюты под запрос.
+							</div>
+						</div>
+						<a href="#" class="services__button button">
+							написать нам в тЕЛЕгРАМ
+						</a>
+					</div>
+				</div>
+			</section>
+			<section class="page__locations locations">
+				<div class="locations__container">
+
+					<h2 class="locations__title title-section">
+						Обменники криптовалют в городах
+					</h2>
+
+					<div class="locations__items">
+						<img src="img/map.svg" alt="Image" class="locations__image">
+						<div class="locations__item _icon-arrow">
+							Анталия
+						</div>
+						<div class="locations__item _icon-arrow">
+							Барселона
+						</div>
+						<div class="locations__item _icon-arrow">
+							Берлин
+						</div>
+						<div class="locations__item _icon-arrow">
+							Братислава
+						</div>
+						<div class="locations__item _icon-arrow">
+							Будапешт
+						</div>
+						<div class="locations__item _icon-arrow">
+							Ванкувер
+						</div>
+						<div class="locations__item _icon-arrow">
+							Варшава
+						</div>
+						<div class="locations__item _icon-arrow">
+							Вена
+						</div>
+						<div class="locations__item _icon-arrow">
+							Анталия
+						</div>
+						<div class="locations__item _icon-arrow">
+							Барселона
+						</div>
+						<div class="locations__item _icon-arrow">
+							Берлин
+						</div>
+						<div class="locations__item _icon-arrow">
+							Братислава
+						</div>
+						<div class="locations__item _icon-arrow">
+							Будапешт
+						</div>
+						<div class="locations__item _icon-arrow">
+							Ванкувер
+						</div>
+						<div class="locations__item _icon-arrow">
+							Варшава
+						</div>
+						<div class="locations__item _icon-arrow">
+							Вена
+						</div>
+						<div class="locations__item _icon-arrow">
+							Анталия
+						</div>
+						<div class="locations__item _icon-arrow">
+							Барселона
+						</div>
+						<div class="locations__item _icon-arrow">
+							Берлин
+						</div>
+						<div class="locations__item _icon-arrow">
+							Братислава
+						</div>
+						<div class="locations__item _icon-arrow">
+							Будапешт
+						</div>
+						<div class="locations__item _icon-arrow">
+							Ванкувер
+						</div>
+						<div class="locations__item _icon-arrow">
+							Варшава
+						</div>
+						<div class="locations__item _icon-arrow">
+							Вена
+						</div>
+						<div class="locations__item _icon-arrow">
+							Анталия
+						</div>
+						<div class="locations__item _icon-arrow">
+							Барселона
+						</div>
+						<div class="locations__item _icon-arrow">
+							Берлин
+						</div>
+						<div class="locations__item _icon-arrow">
+							Братислава
+						</div>
+						<div class="locations__item _icon-arrow">
+							Будапешт
+						</div>
+						<div class="locations__item _icon-arrow">
+							Ванкувер
+						</div>
+						<div class="locations__item _icon-arrow">
+							Варшава
+						</div>
+						<div class="locations__item _icon-arrow">
+							Вена
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="page__feedback feedback">
+				<div class="feedback__container">
+					<h2 class="feedback__title title-section">
+						Отзывы наших клиентов
+					</h2>
+					<div class="feedback__slider splide">
+						<div class="splide__track">
+							<ul class="splide__list">
+								<li class="splide__slide">
+									<div class="item-feedback _icon-quote">
+										<div class="item-feedback__name">
+											Jenny Wilson
+										</div>
+										<div class="item-feedback__date">
+											8/21/24
+										</div>
+										<div class="item-feedback__text">
+											<p>
+												Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+												labore et dolore magna aliqua. Ut enim ad minim
+											</p>
+										</div>
+									</div>
+								</li>
+								<li class="splide__slide">
+									<div class="item-feedback _icon-quote">
+										<div class="item-feedback__name">
+											Jenny Wilson
+										</div>
+										<div class="item-feedback__date">
+											8/21/24
+										</div>
+										<div class="item-feedback__text">
+											<p>
+												Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+												labore et dolore magna aliqua. Ut enim ad minim
+											</p>
+										</div>
+									</div>
+								</li>
+								<li class="splide__slide">
+									<div class="item-feedback _icon-quote">
+										<div class="item-feedback__name">
+											Jenny Wilson
+										</div>
+										<div class="item-feedback__date">
+											8/21/24
+										</div>
+										<div class="item-feedback__text">
+											<p>
+												Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+												labore et dolore magna aliqua. Ut enim ad minim
+											</p>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="page__clients clients">
+				<div class="clients__container">
+					<h2 class="clients__title title-section">наши клиенты</h2>
+					<div class="clients__items">
+						<img src="img/clients/01.svg" alt="Image" class="ibg ibg--contain">
+						<img src="img/clients/02.svg" alt="Image" class="ibg ibg--contain">
+						<img src="img/clients/03.svg" alt="Image" class="ibg ibg--contain">
+						<img src="img/clients/04.svg" alt="Image" class="ibg ibg--contain">
+						<img src="img/clients/05.svg" alt="Image" class="ibg ibg--contain">
+						<img src="img/clients/06.svg" alt="Image" class="ibg ibg--contain">
+					</div>
+				</div>
+				<div class="clients__scroller scroller">
+					<div class="scroller__inner">
+						<img src="img/clients/01.svg" alt="Image" class="ibg ibg--contain">
+						<img src="img/clients/02.svg" alt="Image" class="ibg ibg--contain">
+						<img src="img/clients/03.svg" alt="Image" class="ibg ibg--contain">
+						<img src="img/clients/04.svg" alt="Image" class="ibg ibg--contain">
+						<img src="img/clients/05.svg" alt="Image" class="ibg ibg--contain">
+						<img src="img/clients/06.svg" alt="Image" class="ibg ibg--contain">
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__wrapper">
+					<div class="footer__body">
+						<ul class="footer__menu">
+							<li class="footer__item">
+								<a href="#" class="footer__link text-link">Сервисы</a>
+							</li>
+							<li class="footer__item">
+								<a href="#" class="footer__link text-link">Отзывы</a>
+							</li>
+							<li class="footer__item">
+								<a href="#" class="footer__link text-link">Обменники в городах</a>
+							</li>
+							<li class="footer__item">
+								<a href="#" class="footer__link text-link">Информация</a>
+							</li>
+						</ul>
+						<div class="footer__image">
+							<img src="img/logo.svg" alt="Image">
+						</div>
+						<div class="footer__social">
+							<div class="footer__social-item social-item _icon-tg"><a href="#" class="text-link">название tg канала</a>
+							</div>
+							<div class="footer__social-item social-item _icon-mail"><a href="mailto:xchangen@change.com" class="text-link">xchangen@change.com</a>
+							</div>
+							<div class="footer__social-item footer__social-item--time social-item _icon-time">график <span>24/7</span>
+							</div>
+						</div>
+					</div>
+					<div class="footer__copy">
+						Xchangen © 2024
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script src="js/app.min.js?_v=20241120023103"></script>
+</body>
+
+</html>
