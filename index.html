@@ -6,8 +6,8 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css?_v=20241120023103" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
-	<link rel="stylesheet" href="css/style.min.css?_v=20241120023103">
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css?_v=20241120104856" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+	<link rel="stylesheet" href="css/style.min.css?_v=20241120104856">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
@@ -38,10 +38,13 @@
 								</div>
 							</div>
 							<ul class="menu__list">
-								<li class="menu__item"><a href="#" class="menu__link text-link">Главная</a></li>
-								<li class="menu__item"><a href="#" class="menu__link text-link">Сервисы</a></li>
-								<li class="menu__item"><a href="#" class="menu__link text-link">Обменники в городах</a></li>
-								<li class="menu__item"><a href="#" class="menu__link text-link">Отзывы</a></li>
+								<li class="menu__item"><a href="#hero" data-goto-top="20px" data-goto="#hero" class="menu__link text-link">Главная</a></li>
+								<li class="menu__item"><a href="#services" data-goto-top="20px" data-goto="#services" class="menu__link text-link">Сервисы</a>
+								</li>
+								<li class="menu__item"><a href="#locations" data-goto-top="20px" data-goto="#locations" class="menu__link text-link">Обменники в
+										городах</a></li>
+								<li class="menu__item"><a href="#feedback" data-goto-top="20px" data-goto="#feedback" class="menu__link text-link">Отзывы</a>
+								</li>
 								<li class="menu__item"><a href="#" class="menu__link text-link">Процесс выдачи наличных</a></li>
 								<li class="menu__item menu__item--pc"><a href="#" class="menu__link text-link">Связаться с нами</a></li>
 							</ul>
@@ -62,7 +65,7 @@
 			</div>
 		</header>
 		<main class="page">
-			<div class="page__hero hero">
+			<div id="hero" class="page__hero hero">
 				<div class="hero__container">
 					<div class="hero__wrapper">
 						<img src="img/hero.webp" alt="Image" class="hero__image">
@@ -84,7 +87,7 @@
 					</div>
 				</div>
 			</div>
-			<section class="page__requests requests">
+			<section id="requests" class="page__requests requests">
 				<div class="requests__container">
 					<div class="requests__wrapper">
 						<h2 class="requests__title title-section">
@@ -127,7 +130,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="page__services services">
+			<section id="services" class="page__services services">
 				<div class="services__container">
 					<div class="services__wrapper">
 						<h2 class="services__title title-section">
@@ -199,7 +202,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="page__locations locations">
+			<section id="locations" class="page__locations locations">
 				<div class="locations__container">
 
 					<h2 class="locations__title title-section">
@@ -307,7 +310,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="page__feedback feedback">
+			<section id="feedback" class="page__feedback feedback">
 				<div class="feedback__container">
 					<h2 class="feedback__title title-section">
 						Отзывы наших клиентов
@@ -368,7 +371,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="page__clients clients">
+			<section id="clients" class="page__clients clients">
 				<div class="clients__container">
 					<h2 class="clients__title title-section">наши клиенты</h2>
 					<div class="clients__items">
@@ -398,13 +401,14 @@
 					<div class="footer__body">
 						<ul class="footer__menu">
 							<li class="footer__item">
-								<a href="#" class="footer__link text-link">Сервисы</a>
+								<a href="#services" data-goto-top="20px" data-goto="#services" class="footer__link text-link">Сервисы</a>
 							</li>
 							<li class="footer__item">
-								<a href="#" class="footer__link text-link">Отзывы</a>
+								<a href="#feedback" data-goto-top="20px" data-goto="#feedback" class="footer__link text-link">Отзывы</a>
 							</li>
 							<li class="footer__item">
-								<a href="#" class="footer__link text-link">Обменники в городах</a>
+								<a href="#locations" data-goto-top="20px" data-goto="#locations" class="footer__link text-link">Обменники в
+									городах</a>
 							</li>
 							<li class="footer__item">
 								<a href="#" class="footer__link text-link">Информация</a>
@@ -429,7 +433,7 @@
 			</div>
 		</footer>
 	</div>
-	<script src="js/app.min.js?_v=20241120023103"></script>
+	<script src="js/app.min.js?_v=20241120104856"></script>
 </body>
 
 </html>

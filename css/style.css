@@ -620,12 +620,8 @@ body::after {
   display: flex;
   justify-content: space-between;
   gap: .9375rem;
+  position: relative;
   border-bottom: #32383d .0625rem solid
-}
-.footer__image {
-  display: flex;
-  justify-content: center;
-  align-items: center
 }
 .footer__image img {
   width: 10.4375rem;
@@ -1310,6 +1306,13 @@ body::after {
   }
 }
 @media (min-width:61.99875em) {
+  .footer__image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%)
+  }
   .services__tables {
     display: grid;
     grid-template-columns: repeat(2,1fr);
@@ -1356,7 +1359,7 @@ body::after {
     padding-left: 9.0625rem
   }
   .footer__body {
-    padding-right: 9.0625rem
+    padding-right: 12.3125rem
   }
   .footer__image img {
     width: 10.4375rem
@@ -1786,14 +1789,14 @@ body::after {
       padding-left: calc(.9375rem + 8.125*(100vw - 23.4375rem)/ 57.1875)
     }
   }
-  @supports (padding-right:clamp(0.9375rem ,-2.3924180328rem + 14.2076502732vw ,9.0625rem)) {
+  @supports (padding-right:clamp(0.9375rem ,-3.7243852459rem + 19.8907103825vw ,12.3125rem)) {
     .footer__body {
-      padding-right: clamp(.9375rem ,-2.3924180328rem + 14.2076502732vw ,9.0625rem)
+      padding-right: clamp(.9375rem ,-3.7243852459rem + 19.8907103825vw ,12.3125rem)
     }
   }
-  @supports not (padding-right:clamp(0.9375rem ,-2.3924180328rem + 14.2076502732vw ,9.0625rem)) {
+  @supports not (padding-right:clamp(0.9375rem ,-3.7243852459rem + 19.8907103825vw ,12.3125rem)) {
     .footer__body {
-      padding-right: calc(.9375rem + 8.125*(100vw - 23.4375rem)/ 57.1875)
+      padding-right: calc(.9375rem + 11.375*(100vw - 23.4375rem)/ 57.1875)
     }
   }
   @supports (width:clamp(5.625rem ,3.6526639344rem + 8.4153005464vw ,10.4375rem)) {
