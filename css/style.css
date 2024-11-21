@@ -1415,6 +1415,12 @@ body::after {
     grid-row: 1;
     justify-content: start
   }
+  .services__table:not(:last-child) tbody tr:last-child {
+    border-bottom: #3f5262 solid .0625rem
+  }
+  .services__table:not(:last-child) tbody tr:last-child td {
+    padding-bottom: .5rem
+  }
   .feedback__slider {
     margin: 0 -1.25rem
   }
